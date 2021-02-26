@@ -1,6 +1,9 @@
 name: Tests Build
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
 
 jobs:
 
