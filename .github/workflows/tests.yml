@@ -1,6 +1,9 @@
 name: Tests Build
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
 
 jobs:
 
@@ -27,6 +30,9 @@ jobs:
     steps:
 
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: ‘2’
+
     - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
