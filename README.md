@@ -10,6 +10,7 @@
 Open Source Programs (OSP) is an application that simplifies the processing and selection procedure of Open Source Programs of AnitaB.org Open Source or other third-party programs. This is the Backend repo for OSP.
 
 ## Tech Stack
+
 - Django 3.0.7
 - Django REST Framework 3.11.0
 - Python 3.7+
